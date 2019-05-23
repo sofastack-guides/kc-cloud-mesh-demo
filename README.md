@@ -23,5 +23,6 @@ Service Mesh 将服务间通信能力下沉到基础设施，让应用解耦并�
 - [服务网格总览](overview.md)
 - [服务治理](governance.md)
 - [服务网格容器管理](sidecar.md): 即 Sidecar 管理
+- [新版本灰度发布](gray.md)
 
 ## 更多操作
