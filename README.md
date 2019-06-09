@@ -17,8 +17,14 @@ Service Mesh 将服务间通信能力下沉到基础设施，让应用解耦并�
 
 为了方便参加本次demo的同学，我们准备了整个demo流程的详尽的操作指南:
 
+- [业务场景](story.md)
+- [环境准备](env.md)
 - [登录](login.md)
 - [部署BookInfo应用](bookinfo.md)
+	- [部署productpage应用](bookinfo-productpage.md)
+	- [部署details应用](bookinfo-details.md)
+	- [部署reviews应用](bookinfo-reviews.md)
+	- [部署ratings应用](bookinfo-ratings.md)
 - [访问BookInfo应用](access.md)
 - [服务网格总览](overview.md)
 - [服务治理](governance.md)
