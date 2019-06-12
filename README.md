@@ -1,24 +1,8 @@
-# Istio学习笔记
 
-![](content/introduction/images/logo.png)
+## 使用 CloudMesh 轻松实践 Service Mesh
 
-### 内容介绍
+Service Mesh 将服务间通信能力下沉到基础设施，让应用解耦并轻量化。但 Service Mesh 本身的复杂度依然存在，CloudMesh 通过将 Service Mesh 托管在云上，使得您可以轻松的实践 Service Mesh 技术。通过我们的 workshop，您可以快速部署应用到 CloudMesh ，对服务进行访问，通过监控查看流量，体验服务治理、Sidecar管理和对服务的新版本进行灰度发布等实用功能。
 
-Istio是一个连接，管理和保护微服务的开放平台。
+## 用户操作指南
 
-### 访问方式
-
-这是个人学习Istio的笔记，请点击下面的链接阅读:
-
-- [在线阅读](https://skyao.io/learning-istio/)：hugo格式，界面清爽。托管于腾讯云香港节点，速度快，偶尔抽风
-- [@github](https://github.com/skyao/learning-istio/)：源码托管于github，如有谬误或需讨论，请提issue，欢迎提交PR
-
-### 版权申明
-
-本笔记内容可以任意转载，但请注明来源并提供链接，**请勿用于商业出版**。
-
-### 格式说明
-
-笔记原是基于gitbook构建，由于gitbook本地编辑时生成内容的速度太慢，而gitbook网站的访问速度不理想，还经常被墙。
-
-因此不得已改为hugo格式并独立托管。gitbook上不再生成内容，只保留链接信息以供跳转，请使用在线阅读方式。
+为了方便参加本次demo的同学，我们准备了整个demo流程的详尽的操作指南。
