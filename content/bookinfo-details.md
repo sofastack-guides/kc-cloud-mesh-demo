@@ -16,7 +16,9 @@ description : "部署 details 应用"
 
 中间步骤的具体说明和需要特别注意的地方，请见下面详细的步骤说明。
 
-需要用的镜像地址是：reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-details-v1:1.10.1
+需要用的镜像地址是：
+
+reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-details-v1:1.10.1
 
 ### 操作步骤详解
 
@@ -67,7 +69,16 @@ description : "部署 details 应用"
 
 注意开启 "服务网格引流配置"，第一次部署时，直接100%引流到目标服务即可。
 
-在预览界面，确认无误，点击提交和发布。后续流程和 productpage 是一致的。
+在预览界面，确认无误，点击提交。在应用服务创建成功的提示下，选择 "立即发布"，此时会创建发布单：
 
+![](images/bookinfo/details-6.png)
 
+点整体发布，进入"发布中" 状态之后，可以点图中的应用服务，进入查看详细的发布情况，并等待发布完成：
 
+![](images/bookinfo/details-7.png)
+
+- 如果遇到报错，”后置任务”中的”发布日志配置”失败，请点击忽略即可。
+
+此时再进入应用服务列表页面，就能看到刚发布成功的 details 应用：
+
+![](images/bookinfo/details-8.png)

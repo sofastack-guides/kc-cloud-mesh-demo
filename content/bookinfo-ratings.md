@@ -16,7 +16,9 @@ description : "部署 ratings 应用"
 
 中间步骤的具体说明和需要特别注意的地方，请见下面详细的步骤说明。
 
-需要用的镜像地址是：reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-ratings-v1:1.10.1
+需要用的镜像地址是：
+
+reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-ratings-v1:1.10.1
 
 ### 操作步骤详解
 

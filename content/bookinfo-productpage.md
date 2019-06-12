@@ -16,7 +16,9 @@ description : "部署 productpage 应用"
 
 中间步骤的具体说明和需要特别注意的地方，请见下面详细的步骤说明。
 
-需要用的镜像地址是：reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-productpage-v1:1.10.1
+需要用的镜像地址是：
+
+reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-productpage-v1:1.10.1
 
 ### 操作步骤详解
 
@@ -60,7 +62,7 @@ description : "部署 productpage 应用"
 - 访问方式：集群内访问
 - 端口映射：添加一个，如图所示，协议为TCP，访问端口和容器端口都是 9080 
 
-再添加 productpage-public 服务作为公网访问使用，注意协议一定要选择 HTTP：
+再添加 productpage-public 服务作为公网访问使用，**注意协议一定要选择 HTTP**，一定要选择 HTTP，一定要选择 HTTP：
 
 ![](images/bookinfo/productpage-6.png)
 
@@ -90,17 +92,17 @@ description : "部署 productpage 应用"
 
 ![](images/bookinfo/productpage-9.png)
 
-点整体发布，进入"发布中" 状态之后，可以点图中的应用服务，进入查看详细的发布情况：
+点整体发布，进入"发布中" 状态之后，可以点图中的应用服务，进入查看详细的发布情况，并等待发布完成：
 
 ![](images/bookinfo/productpage-10.png)
 
-如果遇到报错：“Task CREATE-[INTERNET_LOAD_BALANCER_SERVICE-productpage-public] failed as no load balancer status of service namespace21/productpage-public”，请重试。
+- 如果遇到报错：“Task CREATE-[INTERNET_LOAD_BALANCER_SERVICE-productpage-public] failed as no load balancer status of service namespace21/productpage-public”，请重试。
 
-如果遇到报错，"后置任务"中的"发布日志配置"失败，请点击忽略即可。
+### 发布完成
 
-此时再进入应用服务列表页面，就能看到刚发布成功的 productpage 应用：
+至此我们完成了BookInfo示例的四个应用的发布，此时 bookinfo 的四个应用如下图所示：
 
-![](images/bookinfo/productpage-11.png)
+![](images/bookinfo/all-services.png)
 
-
+下一步我们来通过SLB来访问 bookinfo。
 

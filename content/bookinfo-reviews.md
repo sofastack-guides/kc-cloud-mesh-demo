@@ -17,7 +17,9 @@ description : "部署 reviews 应用"
 
 ![](images/bookinfo/reviews.gif)
 
-需要用的镜像地址是：reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-reviews-v1:1.10.1
+需要用的镜像地址是：
+
+reg-cnsh.cloud.alipay.com/aks-sample/examples-bookinfo-reviews-v1:1.10.1
 
 ### 操作步骤详解
 
@@ -37,11 +39,4 @@ description : "部署 reviews 应用"
 
 ![](images/bookinfo/reviews-4.png)
 
-
-
-### BookInfo部署完成
-
-发布完成之后，bookinfo 的四个应用如下图所示：
-
-![](images/bookinfo/all-services.png)
 

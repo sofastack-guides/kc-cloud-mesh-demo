@@ -29,10 +29,3 @@ description : "部署 BookInfo 应用"
 - [部署ratings应用](bookinfo-ratings.html)
 - [部署productpage应用](bookinfo-productpage.html)
 
-### 发布完成
-
-在上述四个应用发布完成之后，bookinfo 的四个应用如下图所示：
-
-![](images/bookinfo/all-services.png)
-
-下一步我们来通过SLB来访问 bookinfo。
