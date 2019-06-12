@@ -1,4 +1,12 @@
-# 登录
+---
+date: 2019-06-10T16:00:00+08:00
+title: 登录
+weight: 30
+menu:
+  main:
+    parent: "guide"
+description : "登录"
+---
 
 每位用户在开始demo前都将分配 用户名 和 登录密码，以及我们为您提前准备好的其他资源。
 

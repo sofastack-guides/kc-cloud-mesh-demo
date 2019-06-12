@@ -1,4 +1,13 @@
-# 部署 BookInfo 应用
+---
+date: 2019-06-10T16:00:00+08:00
+title: 部署 BookInfo 应用
+weight: 40
+menu:
+  main:
+    parent: "guide"
+description : "部署 BookInfo 应用"
+---
+
 
 ### 进入应用发布页面
 
@@ -15,10 +24,10 @@
 
 下面我们逐个展示如何创建 BookInfo 下的四个应用，请按照下面的指南依次发布：
 
-- [部署productpage应用](bookinfo-productpage.md)
-- [部署details应用](bookinfo-details.md)
-- [部署reviews应用](bookinfo-reviews.md)
-- [部署ratings应用](bookinfo-ratings.md)
+- [部署details应用](bookinfo-details.html)
+- [部署reviews应用](bookinfo-reviews.html)
+- [部署ratings应用](bookinfo-ratings.html)
+- [部署productpage应用](bookinfo-productpage.html)
 
 ### 发布完成
 

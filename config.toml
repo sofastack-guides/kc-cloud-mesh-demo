@@ -1,0 +1,69 @@
+baseurl = "http://localhost:1313/"
+languageCode = "zh-cn"
+uglyurls = true
+relativeURLs=false
+title = "CloudMesh操作指南"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+preserveTaxonomyNames = true
+disablePathToLower = true
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = "c7442f5794ea2abb71c6ff05dc0b8779"
+
+[params]
+	# General information
+	author = "敖小剑"
+	keywords = "CloudMesh"
+	description = "CloudMesh操作指南"
+	copyright = "版权所有，转载请注明出处"
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/sofastack-guides/kc-cloud-mesh-demo"
+	
+	version = ""
+	logo = "images/logo.png"
+	favicon = ""
+	
+	permalink = "#"
+	
+	# reward button, comment this to disable it
+	reward = true
+	
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+	
+	# Syntax highlighting theme
+	highlight_css  = ""
+	
+	[params.palette]
+		primary = "red"
+		accent  = "teal"
+	
+	[params.font]
+		text = "Ubuntu"
+		code = "Ubuntu Mono"
+
+[social]
+	twitter = ""
+	github  = "skyao"
+	email   = "aoxiaojian@gmail.com"
+
+
+[[menu.main]]
+	name   = "操作指南"
+	identifier = "guide"
+	url    = "index.html"
+	weight = 1
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
+
+

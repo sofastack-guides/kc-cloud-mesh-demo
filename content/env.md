@@ -1,4 +1,12 @@
-# Demo环境准备
+---
+date: 2019-06-10T16:00:00+08:00
+title: 环境准备
+weight: 20
+menu:
+  main:
+    parent: "guide"
+description : "环境准备"
+---
 
 ### 金融云用户模型
 

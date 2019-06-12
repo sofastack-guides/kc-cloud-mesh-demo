@@ -1,4 +1,12 @@
-# 部署 reviews 应用
+---
+date: 2019-06-10T16:00:00+08:00
+title: "2. 部署 reviews 应用"
+weight: 42
+menu:
+  main:
+    parent: "guide"
+description : "部署 reviews 应用"
+---
 
 ### 操作视频
 

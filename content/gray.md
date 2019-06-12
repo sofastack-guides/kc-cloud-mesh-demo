@@ -1,9 +1,17 @@
-# 灰度发布
+---
+date: 2019-06-10T16:00:00+08:00
+title: 灰度发布
+weight: 90
+menu:
+  main:
+    parent: "guide"
+description : "灰度发布"
+---
 
 ### 准备工作和版本说明
 
 - 进入应用发布页面，选择准备发布的服务，如我们选择 reviews
-- 打开浏览器访问 Bookinfo 应用，具体方式参照 [访问BookInfo应用](access.md) 一节 
+- 打开浏览器访问 Bookinfo 应用，具体方式参照 [访问BookInfo应用](access.html) 一节 
 - 用我们提供的脚本，尝试发起几次请求，后面要用它来模拟流量
 
 ![](images/gray/gray-prepare.gif)

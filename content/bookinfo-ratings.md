@@ -1,4 +1,12 @@
-# 部署 ratings 应用
+---
+date: 2019-06-10T16:00:00+08:00
+title: 3. 部署 ratings 应用
+weight: 43
+menu:
+  main:
+    parent: "guide"
+description : "部署 ratings 应用"
+---
 
 ### 操作视频
 

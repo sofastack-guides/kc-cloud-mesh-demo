@@ -1,6 +1,14 @@
-# 访问 BookInfo 应用
+---
+date: 2019-06-10T16:00:00+08:00
+title: 访问 BookInfo 应用
+weight: 50
+menu:
+  main:
+    parent: "guide"
+description : "访问 BookInfo 应用"
+---
 
-## 获知 SLB 的公网IP地址
+### 获知 SLB 的公网IP地址
 
 在前面我们部署 BookInfo 的过程中，productpage 应用有配置负载均衡，我们需要获知这个SLB的公网IP地址以便后面通过浏览区访问 productpage 页面。
 
@@ -12,13 +20,13 @@
 
 ![](images/access/service-detail.png)
 
-## 访问 productpage 页面
+### 访问 productpage 页面
 
 打开浏览器，访问地址 `http://SLBIP:19080/productpage?u=normal`，看到的页面如下：
 
 ![](images/story/story3.png)
 
-### 联系访问页面模拟流量
+### 模拟访问页面的流量
 
 在后面进行灰度发布和流量监控的展示中，需要发起批量请求来模拟实际流量，我们提供了一个简单的bash脚本来完成这个事情。在我们分发的文件中有这个名为 auto_request.sh 的脚本文件。
 

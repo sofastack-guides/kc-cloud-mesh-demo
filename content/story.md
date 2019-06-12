@@ -1,4 +1,12 @@
-# Demo业务场景
+---
+date: 2019-06-10T16:00:00+08:00
+title: 业务场景
+weight: 20
+menu:
+  main:
+    parent: "guide"
+description : "Demo业务场景"
+---
 
 这次 demo 我们采用的是 Istio 官方的 BookInfo 示例，之所以选择这个例子，是因为考虑到大部分对 Service Mesh 和 Istio 有了解的同学，都对 BookInfo 示例比较熟悉。
 

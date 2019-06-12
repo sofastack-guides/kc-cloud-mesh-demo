@@ -1,34 +1,24 @@
-# Cloud Mesh Demo
+# Istio学习笔记
 
-## Demo介绍
+![](content/introduction/images/logo.png)
 
-### **使用 CloudMesh 轻松实践 Service Mesh**
+### 内容介绍
 
-Service Mesh 将服务间通信能力下沉到基础设施，让应用解耦并轻量化。但 Service Mesh 本身的复杂度依然存在，CloudMesh 通过将 Service Mesh 托管在云上，使得您可以轻松的实践 Service Mesh 技术。通过我们的 workshop，您可以快速部署应用到 CloudMesh ，对服务进行访问，通过监控查看流量，体验服务治理、Sidecar管理和对服务的新版本进行灰度发布等实用功能。
+Istio是一个连接，管理和保护微服务的开放平台。
 
-### 更多活动信息
+### 访问方式
 
-关于本次SOFAStack Cloud Native Workshop的更多信息，请见：
+这是个人学习Istio的笔记，请点击下面的链接阅读:
 
-- Kubeconf Shanghai 官方网站上 [蚂蚁金服主办的SOFAStack Cloud Native Workshop介绍](https://kccncosschn19chi.sched.com/event/OxK7/long-kuang-yan-shu-zha-sofastack-cloud-native-workshop-sha-yi-gui-zha-shen?iframe=no&w=100%&sidebar=yes&bg=no)
-- [活动详情介绍](https://www.sofastack.tech/activities/sofastack-cloud-native-workshop)
+- [在线阅读](https://skyao.io/learning-istio/)：hugo格式，界面清爽。托管于腾讯云香港节点，速度快，偶尔抽风
+- [@github](https://github.com/skyao/learning-istio/)：源码托管于github，如有谬误或需讨论，请提issue，欢迎提交PR
 
-## 用户操作指南
+### 版权申明
 
-为了方便参加本次demo的同学，我们准备了整个demo流程的详尽的操作指南:
+本笔记内容可以任意转载，但请注明来源并提供链接，**请勿用于商业出版**。
 
-- [业务场景](story.md)
-- [环境准备](env.md)
-- [登录](login.md)
-- [部署BookInfo应用](bookinfo.md)
-	- [部署productpage应用](bookinfo-productpage.md)
-	- [部署details应用](bookinfo-details.md)
-	- [部署reviews应用](bookinfo-reviews.md)
-	- [部署ratings应用](bookinfo-ratings.md)
-- [访问BookInfo应用](access.md)
-- [服务网格总览](overview.md)
-- [服务治理](governance.md)
-- [服务网格容器管理](sidecar.md): 即 Sidecar 管理
-- [**灰度发布**](gray.md)
+### 格式说明
 
-## 更多操作
+笔记原是基于gitbook构建，由于gitbook本地编辑时生成内容的速度太慢，而gitbook网站的访问速度不理想，还经常被墙。
+
+因此不得已改为hugo格式并独立托管。gitbook上不再生成内容，只保留链接信息以供跳转，请使用在线阅读方式。
