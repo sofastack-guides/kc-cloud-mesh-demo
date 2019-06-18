@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
-title: 灰度发布
-weight: 90
+title: "*灰度发布"
+weight: 50
 menu:
   main:
     parent: "guide"

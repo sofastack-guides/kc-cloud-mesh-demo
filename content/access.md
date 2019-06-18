@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
 title: 访问 BookInfo 应用
-weight: 50
+weight: 49
 menu:
   main:
     parent: "guide"

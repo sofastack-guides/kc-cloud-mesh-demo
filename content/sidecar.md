@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
-title: Sidecar管理
-weight: 80
+title: 3.Sidecar管理
+weight: 90
 menu:
   main:
     parent: "guide"

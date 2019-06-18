@@ -22,10 +22,12 @@ Service Mesh 将服务间通信能力下沉到基础设施，让应用解耦并�
   - [部署ratings应用](bookinfo-ratings.html)
   - [部署productpage应用](bookinfo-productpage.html)
 - [访问BookInfo应用](access.html)
-- [服务网格总览](overview.html)
-- [服务治理](governance.html)
-- [服务网格容器管理](sidecar.html): 即 Sidecar 管理
 - [**灰度发布**](gray.html)
+- [其他功能](others.html)
+	- [服务网格总览](overview.html)
+	- [服务治理](governance.html)
+	- [服务网格容器管理](sidecar.html): 即 Sidecar 管理
+
 
 
 

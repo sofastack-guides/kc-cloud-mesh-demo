@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
-title: 服务治理
-weight: 70
+title: 2.服务治理
+weight: 80
 menu:
   main:
     parent: "guide"
