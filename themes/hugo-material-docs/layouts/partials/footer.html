@@ -1,0 +1,101 @@
+{{ if false }}
+    <div>current page: Title={{.Title}}; Kind={{.Kind}}; IsPage={{.IsPage}}; Prev={{.Prev}}; Next={{.Next}};Weight={{.Weight}};</div>
+
+    {{ range .Site.Pages.ByWeight }}
+    <div>Title={{.Title}}; Kind={{.Kind}}; IsPage={{.IsPage}}; Prev={{.Prev}}; Next={{.Next}};Weight={{.Weight}};</div>
+    {{ end }}
+{{ end }}
+
+{{ if .IsPage }}
+{{ if .Prev | or .Next }}
+
+{{ $previewPage := .Prev }}
+{{ if not $previewPage }}
+    {{ $previewPage = .Site.Home }}
+{{ else }}
+    {{ if eq $previewPage.Weight 0 }}
+        {{ $previewPage = .Site.Home }}
+    {{ end }}
+{{ end }}
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+      <a href="{{ $previewPage.Permalink }}" title="{{ $previewPage.Title }}">
+        <span class="direction">
+          上一页
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              {{ $previewPage.Title }}
+            </div>
+          </div>
+        </div>
+      </a>
+  </div>
+
+  <div class="next">
+  {{ if .Next }}
+  {{ if gt .Next.Weight 0 }}
+      <a href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+        <span class="direction">
+          下一页
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              {{ .Next.Title }}
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  {{ end }}
+  {{ end }}
+  </div>
+</nav>
+{{ end }}
+{{ end }}
+
+{{ if .IsHome }}
+{{ if gt (len .Site.Pages) 2 }}
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  </div>
+
+{{ $firstPage := (index (.Site.Pages.ByWeight) 0) }}
+{{ range .Site.Pages.ByWeight }}
+
+    {{ if not $firstPage.IsPage }}
+        {{ if and .IsPage (gt .Weight 0) }}
+            {{ $firstPage = .}}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+  {{ $title := $firstPage.Title  }}
+  {{ $permalink := $firstPage.Permalink }}
+  <div class="next">
+      <a href="{{ $permalink }}" title="{{ $title }}">
+        <span class="direction">
+          下一页
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              {{ $title }}
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  </div>
+</nav>
+{{ end }}
+{{ end }}

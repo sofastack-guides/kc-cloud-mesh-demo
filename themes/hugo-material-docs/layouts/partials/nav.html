@@ -1,0 +1,37 @@
+{{ $currentNode := . }}
+
+{{ $alwaysOpenLevelOne := lt (len .Site.Menus.main) 10 }}
+{{ $alwaysOpenLevelTwo := lt (len .Site.Menus.main) 5 }}
+
+{{ range .Site.Menus.main.ByWeight }}
+{{ $.Scratch.Set "currentMenuEntry" . }}
+<li>
+  {{ if .HasChildren }}
+    {{ partial "nav_link" $currentNode }}
+{{ if or $alwaysOpenLevelOne (hasPrefix ( $.Permalink | relURL | printf "%s" )  (replace .URL "/index.html" "/")) }}
+    <ul>
+      {{ range .Children }}
+        {{ $.Scratch.Set "currentMenuEntry" . }}
+        <li>
+          {{ if .HasChildren }}
+            {{ partial "nav_link" $currentNode }}
+{{ if or $alwaysOpenLevelTwo (hasPrefix ( $.Permalink | relURL | printf "%s" )  (replace .URL "/index.html" "/")) }}
+            <ul>
+              {{ range .Children }}
+                {{ $.Scratch.Set "currentMenuEntry" . }}
+                {{ partial "nav_link" $currentNode }}
+              {{ end }}
+            </ul>
+{{ end }}
+          {{ else }}
+            {{ partial "nav_link" $currentNode }}
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+{{ end }}
+  {{ else }}
+    {{ partial "nav_link" $currentNode }}
+  {{ end }}
+</li>
+{{ end }}
