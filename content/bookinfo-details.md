@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
 title: "1. 部署 details 应用"
-weight: 41
+weight: 101
 menu:
   main:
     parent: "guide"

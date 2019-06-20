@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10T16:00:00+08:00
 title: 4. 部署 productpage 应用
-weight: 44
+weight: 104
 menu:
   main:
     parent: "guide"
